@@ -23,16 +23,14 @@ header {
     font-size: larger;
 }
 
-section.gods-gallery {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+.gods-gallery {
+    text-align: center;
 }
 
-section.gods-gallery .god {
+.gods-gallery .god {
+    display: inline-block;
+    margin: 0 15px;
     text-align: center;
-    flex: 1;
-    margin: 0 10px;
 }
 
 section.gods-gallery img {
@@ -116,11 +114,38 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid rgb(17, 12, 12);
+    background-color: #e7e4d8;
     padding: 8px;
     text-align: left;
 }
 
 th {
     background-color: #7c7676;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.page-navigation label {
+    margin-right: 10px;
+}
+
+.page-navigation select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.5px solid #000000;
+}
+
+.gods-gallery h2 {
+    text-align: center;
+    font-size: 28px;
+    border-bottom: 3px solid #000000;
 }

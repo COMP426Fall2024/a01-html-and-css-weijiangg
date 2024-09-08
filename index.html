@@ -20,6 +20,7 @@
             </ul>
         </nav>
         <section class="gods-gallery">
+            <h2>Greek Mythology</h2>
             <div class="god">
                 <a href="hades.html">
                     <img src="images/hades.jpg" alt="Hades">
@@ -60,5 +61,30 @@
                 <td>Sea, earthquakes, and horses</td>
                 <td>Trident</td>
             </tr>
+        </table>
+        <div  class="page-navigation">
+            <label for="god-select">Navigate to:</label>
+            <select id="god-select" onchange="navigateToPage()">
+                <option value="">--Select a god--</option>
+                <option value="hades.html">Hades</option>
+                <option value="zeus.html">Zeus</option>
+                <option value="poseidon.html">Poseidon</option>
+            </select>
+        </div>
+        <script>
+            function navigateToPage() {
+                var selectElement = document.getElementById("god-select");
+                var selectedValue = selectElement.value;
+                if (selectedValue) {
+                    window.location.href = selectedValue;
+                }
+            }
+        </script>
+        <div>
+            <p>Image Sources:</p>
+            <p>Hades: <a href="https://www.worldhistory.org/image/778/statue-of-hades-and-cerberus/" target="_blank">https://www.worldhistory.org/image/778/statue-of-hades-and-cerberus/</a></p>
+            <p>Zeus: <a href="https://en.wikipedia.org/wiki/Zeus#cite_note-1" target="_blank">https://en.wikipedia.org/wiki/Zeus#cite_note-1</a></p>
+            <p>Poseidon: <a href="https://commons.wikimedia.org/wiki/File:Statue_of_Poseidon_with_Parian_marble.jpg" target="_blank">https://commons.wikimedia.org/wiki/File:Statue_of_Poseidon_with_Parian_marble.jpg</a></p>
+        </div>
     </body>
 </html>
